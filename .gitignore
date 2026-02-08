@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+.vscode/
+src/sprite_handle/__pycache__/
+src/logic/__pycache__/
+src/entities/__pycache__/
+src/drawing_modules/__pycache__/
