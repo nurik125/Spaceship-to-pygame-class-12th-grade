@@ -41,9 +41,12 @@ class InputHandler:
           agent.restart(agent.World.hitbox_show)
               
       elif event.type == pygame.MOUSEBUTTONDOWN:
-        for enemy in agent.World.enemies.sprites():
-          if enemy.rect.collidepoint(event.pos):
-            print(enemy.alien_type)
+        # for enemy in agent.World.enemies.sprites():
+        #   if enemy.rect.collidepoint(event.pos):
+        #     print(enemy.alien_type)
+        if event.button == 1:
+          if agent.World.player:
+            agent.World._spawn_missile(MISSILE_SIZE, agent.World.player.pos[0], agent.World.player.pos[1], agent.World.player.angle)
             
       elif event.type == pygame.VIDEORESIZE:
         agent.screen = pygame.display.set_mode(event.size, pygame.RESIZABLE)
