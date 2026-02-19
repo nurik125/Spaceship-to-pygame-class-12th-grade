@@ -9,7 +9,7 @@ Install the dependencies
 pip install -r requirements.txt
 ```
 
-Lauch
+Launch
 ```bash
 py ./src/main.py
 ```
